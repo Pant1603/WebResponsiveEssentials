@@ -1,0 +1,23 @@
+ul{
+margin: 0;
+padding: 0;
+list-style: none;
+height: 26px;
+line-height: 26px;
+background-color: lime;
+font-family: Gabriola;
+font-size: 20px;
+}
+li{
+float: bottom;
+border-right: 0px solid purple;
+}
+a{
+display: block;
+padding 0 28px;
+color: Black;
+text-decoration: none;
+}
+a:hover, .active a{
+background-color: aqua;
+}
