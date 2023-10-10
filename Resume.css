@@ -1,0 +1,561 @@
+/* responsive media query start  */
+
+/* navbar responsive start  */
+
+@media(max-width: 947px) {
+
+    .navbar {
+        padding: 5px 0px;
+    }
+
+    .navbar .logo a {
+        margin-left: -45px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+        margin-right: -40px;
+    }
+
+    .menu-btn .showing::before {
+        content: "\f00d";
+    }
+
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        /* background-color: #111; */
+        background: linear-gradient(to right, #414141, #032f36);
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .showing {
+        left: 0;
+    }
+
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 20px;
+
+
+    }
+
+}
+/* navbar responsive end  */
+
+/* --------Home Section responsive start ---  */
+
+@media(max-width: 991px) {
+  
+    .text-area {
+        width: 27rem;
+    }
+
+    .image-area img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 947px) {
+
+    .home {
+           grid-template-areas: 
+            "img"
+            "text";
+    }
+
+    .text-area{
+        grid-area: text;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-area{
+        grid-area: img;
+        padding-top: 5rem;
+        margin-left: 16rem;
+
+    }
+
+    .image-area img {
+        height: 260px;
+        width: 260px;
+    }
+}
+
+@media(max-width: 700px) {
+  
+
+    .text-area {
+        width: 27rem;
+        line-height: 60px;
+        margin-left: 5rem;
+
+    }
+
+    .text-area .text-1 {
+        font-size: 2.5rem;
+       
+    }
+    .text-area .text-2 {
+        font-size: 3rem;
+       
+    }
+    
+    
+    .image-area{
+        padding-top: 5rem;
+        margin-left: 11rem;
+
+    }
+}
+
+@media(max-width: 500px){
+
+    .home{
+        background: #111;
+        height: 112vh;
+    }
+
+    .image-area{
+        padding-top: 5rem;
+        margin-left: 4rem;
+    }
+
+    .text-area {
+        width: 22rem;
+        line-height: 52px;
+        margin-left: 5px;
+        margin-bottom: 2rem;
+    }
+
+    .text-area .text-3 {
+        font-size: 1.8rem;
+    }
+
+    .text-area .text-3 span { 
+        font-size: 20px;
+    }
+
+    .social-icons {
+        width: 60%;
+    }
+
+}
+
+/* --------Home Section responsive end  ---  */
+
+/* --------About Section responsive start  ---  */
+
+@media(max-width: 1104px) {
+    .about .about-content .column-left img {
+        width: 300px;
+
+    }
+}
+
+@media(max-width: 947px) {
+    /* .max-width {
+        max-width: 800px;
+    } */
+
+    .about .about-content .column {
+        width: 100%;
+
+    }
+
+    .about .about-content .column-left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+
+    }
+
+    .about .about-content .column-right {
+        flex: 100%;
+
+    }
+}
+
+/* --------About Section responsive end ---  */
+
+
+/* --------Skill  Section responsive start ---  */
+
+@media(max-width: 1150px) {
+    .image {
+        width: 130px;
+        height: 130px;
+
+    }
+
+}
+
+@media(max-width: 1050px) {
+
+    .Skills .skills-content {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+@media(max-width: 947px) {
+    .image {
+        width: 110px;
+        height: 110px;
+
+    }
+
+    .skill-icon {
+        width: 55px;
+
+    }
+}
+
+@media(max-width: 740px) {
+    .Skills .skills-content {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media(max-width:550px) {
+    .Skills .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .Skills .skills-content {
+        grid-gap: 10px;
+    }
+}
+
+/* --------Skill  Section responsive end ---  */
+
+
+/* --------Education Section responsive start ---  */
+
+
+@media(max-width: 991px) {
+    .education-content .education-box {
+        flex-direction: column;
+        width: auto
+    }
+
+    .education-box .text {
+        flex: 1 1 17rem;
+    }
+
+}
+
+@media(max-width: 690px) {
+    .education-box .img {
+        flex: 1 1 13rem;
+
+    }
+}
+
+/* --------Education Section responsive end ---  */
+
+
+/* --------Project  Section responsive staet ---  */
+
+@media(max-width: 690px) {
+    .Project .container {
+        padding: 0px 5px;
+    }
+}
+
+/* --------Project  Section responsive end ---  */
+
+
+
+/* --------Contact  Section responsive start ---  */
+
+@media(max-width: 1270px) {
+
+    .from-group .input-group input {
+        width: 32vw;
+        height: 4vh;
+
+    }
+
+    .Contact .container {
+        margin: -4rem 5rem;
+
+    }
+}
+
+
+@media(max-width: 1150px) {
+    .Contact .container {
+        max-width: 900px;
+
+    }
+
+    .Contact .content .image-box img {
+        width: 400px;
+        margin-left: -75px;
+    }
+}
+
+
+@media(max-width: 1030px) {
+
+    .Contact .container {
+        max-width: 800px;
+
+    }
+}
+
+@media(max-width: 947px) {
+
+    .Contact .container {
+        max-width: 450px;
+
+    }
+
+    .Contact .container {
+        margin: -4rem 3rem;
+
+    }
+
+    .Contact .container .content {
+        flex-wrap: wrap;
+        padding: 1.5rem 0rem;
+    }
+
+    .Contact .content .image-box img {
+        width: 360px;
+        margin-left: -75px;
+
+    }
+
+    .from-group {
+        margin-left: -3rem;
+        margin-top: 2px;
+
+    }
+
+    .from-group .input-group input {
+        width: 36vw;
+        height: 4vh;
+
+    }
+
+    .from-group .input-group textarea {
+        width: 36vw;
+        height: 10vh;
+
+    }
+
+}
+
+@media(max-width: 690px) {
+    .Contact .container {
+        max-width: 310px;
+
+    }
+
+    .Contact .content .image-box img {
+        width: 265px;
+        margin-left: -80px;
+    }
+
+    .Contact .container {
+        margin: -4rem 2rem;
+
+    }
+
+    .from-group {
+        margin-left: -3.5rem;
+        margin-top: 2px;
+
+    }
+
+    .from-group .input-group input {
+        width: 37vw;
+        height: 4.5vh;
+
+    }
+
+    .from-group .input-group textarea {
+        width: 37vw;
+        height: 10vh;
+
+    }
+
+    .button-area button {
+        font-size: 13px;
+        padding: 10px 13px;
+        margin-right: 55px;
+
+    }
+
+    .button-area button:hover {
+        letter-spacing: 0px;
+
+    }
+
+
+}
+
+@media(max-width: 447px) {
+    .Contact .container {
+        max-width: 295px;
+
+    }
+
+    .Contact .content .image-box img {
+        margin-left: -88px;
+    }
+
+    .from-group .input-group input {
+        width: 55vw;
+        height: 4.6vh;
+
+    }
+
+    .from-group .input-group textarea {
+        width: 55vw;
+        height: 10vh;
+
+    }
+
+    .button-area button {
+        font-size: 14px;
+        padding: 10px 13px;
+        margin-right: 70px;
+
+    }
+
+    .button-area button:hover {
+        letter-spacing: 0px;
+
+    }
+}
+
+/* --------Contact  Section responsive end ---  */
+
+
+/* <!-- footer section responsive start --> */
+
+@media(max-width: 1260px) {
+    .footer {
+        bottom: unset;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .container-box .Box {
+        flex-basis: 100%;
+
+    }
+
+    .social-link {
+        margin-right: auto;
+    }
+}
+
+
+
+@media(max-width: 947px) {
+    .footer {
+        bottom: unset;
+    }
+
+    .container-box {
+        flex-wrap: wrap;
+    }
+
+    .container-box .Box {
+        flex-basis: 100%;
+
+    }
+
+    .social-link {
+        margin-right: auto;
+    }
+
+
+}
+
+@media(max-width: 690px) {
+    .container-box .Box {
+        flex-basis: 100%;
+        margin: 14px -5px;
+    }
+
+    .Box h3 {
+        font-size: 25px;
+        line-height: 2rem;
+
+    }
+
+    .Box p {
+        font-size: 16px;
+    }
+
+    .Box a {
+        font-size: 14px;
+        line-height: 2px;
+    }
+
+    .social-link {
+        margin-right: initial;
+    }
+
+
+    .designer {
+        font-size: 12px;
+
+    }
+
+}
+
+/* <!-- footer section responsive end --> */
+
+/* .scroll-up-btn responsive start */
+
+@media(max-width: 1260px) {
+    .scroll-up-btn {
+        height: 40px;
+        width: 40px;
+        left: 18px;
+
+
+    }
+}
+
+@media(max-width: 947px) {
+    .scroll-up-btn {
+        height: 35px;
+        width: 35px;
+        left: 8px;
+        line-height: 47px;
+
+    }
+}
+
+/* .scroll-up-btn responsive end */
